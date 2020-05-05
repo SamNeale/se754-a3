@@ -8,7 +8,18 @@ public class Calculator {
      * - Note: do not change method signature
      */
     public Integer sumAllNumbers(final Integer... valuesParam){
-    	throw new RuntimeException("Write your code here");
+
+        if (valuesParam == null){
+            return null;
+        }
+
+        Integer sum = 0;
+
+        for (Integer i : valuesParam){
+            sum += i;
+        }
+
+        return sum;
     }
     
 	/**
@@ -17,6 +28,17 @@ public class Calculator {
      * - Note: do not change method signature
      */
     public Integer multiplyAllNumbers(final Integer... valuesParam){
-        throw new RuntimeException("Write your code here");
+
+        if (valuesParam == null){
+            return null;
+        }
+
+        Integer prod = 1;
+
+        for (Integer i : valuesParam){
+            prod *= i;
+        }
+
+        return prod;
     }
 }
